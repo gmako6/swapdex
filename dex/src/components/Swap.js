@@ -89,7 +89,7 @@ function Swap(props) {
 
   //fnc getting prices of two tokens on swap.
   async function fetchPrices(one, two) {
-    const res = await axios.get("http://localhost:3001/tokenPrice", {
+    const res = await axios.get("https://dexback.vercel.app:3001/tokenPrice", {
       params: { addressOne: one, addressTwo: two },
     });
 
